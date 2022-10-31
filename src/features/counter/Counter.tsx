@@ -2,8 +2,6 @@ import React, { useState } from "react";
 
 import { useAppSelector, useAppDispatch } from "../../app/hooks";
 import {
-  decrement,
-  increment,
   incrementByAmount,
   incrementAsync,
   incrementIfOdd,
@@ -19,21 +17,7 @@ export function Counter() {
 
   return (
     <div>
-    <div>
-        <button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          -
-        </button>
-        <span>{count}</span>
-        <button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          +
-        </button>
-      </div>
+      <span>{count}</span>
       <div>
         <input
           aria-label="Set increment amount"

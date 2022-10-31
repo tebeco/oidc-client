@@ -4,9 +4,7 @@ import { Counter } from "./features/counter/Counter";
 function App() {
   return (
     <div>
-      <header>
-        <Counter />
-      </header>
+      <Counter />
     </div>
   );
 }
